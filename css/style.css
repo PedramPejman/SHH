@@ -1,0 +1,324 @@
+.title{
+
+}
+
+
+body {
+  background: #fff;
+  color: #5b5b5b;
+  font: 300 1em/1.5em "Lato", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  color: #217dbb;
+}
+
+article {
+  display: block;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  margin: 0 0 .25em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.33em;
+  margin: 0 0 .33em 0;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0 0 .5em 0;
+}
+
+p {
+  margin: 0 0 .5em 0;
+}
+
+/*---------- UTILITIES ----------*/
+.clearfix, .container, .nav-main ul {
+  *zoom: 1;
+}
+.clearfix:before, .container:before, .nav-main ul:before, .clearfix:after, .container:after, .nav-main ul:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after, .container:after, .nav-main ul:after {
+  clear: both;
+}
+
+/*---------- GRID ----------*/
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/*---------- HEADER ----------*/
+.header {
+  padding: 1em 0;
+}
+
+/*---------- MAIN ----------*/
+.main {
+  margin-top: 3em;
+}
+
+/*---------- NAVIGATIONS ----------*/
+.nav-main {
+  float: right;
+}
+.nav-main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-main li {
+  float: left;
+  margin: 0 1em;
+}
+.nav-main li.first {
+  margin-left: 0;
+}
+.nav-main li.last {
+  margin-right: 0;
+}
+.nav-main a {
+  color: #5b5b5b;
+  display: inline-block;
+}
+
+.menu-item{
+  transition: all, .5s, cubic;
+
+}
+.menu-item:hover {
+  color: rgba(0,0,0,.3);
+  transition: all, .5s, cubic;
+}
+
+/*---------- POSTS ----------*/
+.post {
+  margin-bottom: 2em;
+}
+
+/*---------- BANNER ----------*/
+/* INFO
+   Banner Graphic must be at least the height of .banner + height of parent element (in this case the header)
+   e.g.  .banner { height: 22em }
+         .header { height: 3.5em }
+         22em + 3.5em = 25.5em
+         25.5em * 16px = 408px
+         => Banner Graphic must be at least 408px height!
+
+Graphic: http://unsplash.com/post/81123587039/download-by-wojtek-witkowski
+*/
+.banner {
+  background: url(1.jpg) no-repeat fixed 50% 0;
+  height: 22em;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner-text {
+  color: rgba(233, 238, 243, 1);
+
+  font-size: 1.25em;
+  left: 0;
+  position: absolute;
+  top: 85%;
+  letter-spacing: 7px;
+  text-align: center;
+  text-shadow: 3px 3px 5px  rgba(0, 0, 0, 1);
+  width: 100%;
+  font-size: 1.7em;
+}
+
+.time-option {
+  display: inline;
+  width: 10px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.option-wrapper {
+  display: inline;
+  border: solid 1px #b3aca7;
+  width: 100%;
+  margin:0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #e2dedb;
+}
+
+header {
+  margin-top: 50px 0 25px 0;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  width: 500px;
+  margin: 50px auto 100px auto;
+  
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
